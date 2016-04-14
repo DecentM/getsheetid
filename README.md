@@ -1,2 +1,2 @@
 # getsheetid
-A script that will extract Google Sheet ID from a .gsheet file
+A script that extracts Google Sheet ID from a .gsheet file
