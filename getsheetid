@@ -1,2 +1,10 @@
+#!/bin/bash
+minargs=1
+if [ $# != $minargs ]; then
+    printf "Argument count must be $minargs, you provided $#\n"
+    printf "Usage: $0 (path)\n"
+    exit 1
+fi
+
 gsheetid=$(cat "$1" | cut -d '"' -f4 | cut -d '=' -f2)
 echo "$1"": ""$gsheetid"
