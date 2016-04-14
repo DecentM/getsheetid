@@ -1,0 +1,2 @@
+gsheetid=$(cat "$1" | cut -d '"' -f4 | cut -d '=' -f2)
+echo "$1"": ""$gsheetid"
